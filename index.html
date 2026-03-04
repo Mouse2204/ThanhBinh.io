@@ -193,29 +193,6 @@ footer{background:var(--bg2);border-top:1px solid var(--brd);padding:2.5rem;text
 .fta{width:36px;height:36px;border-radius:4px;background:var(--surf);border:1px solid var(--brd);display:flex;align-items:center;justify-content:center;color:var(--txt);font-size:14px;transition:all .2s}.fta:hover{color:var(--c1);border-color:rgba(0,240,208,.35)}
 body::after{content:'';position:fixed;inset:0;pointer-events:none;z-index:9998;opacity:.018;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
 @media(max-width:768px){#nav{padding:0 1rem}.nlinks{display:none}.abg,.ctg,.domain-grid{grid-template-columns:1fr;gap:2rem}.frow,.portal-cards{grid-template-columns:1fr}body{cursor:auto}#cd,#cr{display:none}}
-
-/* CONTACT LINKS */
-.clink{display:flex;align-items:center;gap:.9rem;background:var(--surf);border:1px solid var(--brd);border-radius:8px;padding:.9rem 1.1rem;transition:border-color .2s,transform .2s;color:inherit;text-decoration:none}
-.clink:hover{border-color:rgba(0,240,208,.35);transform:translateY(-2px);color:inherit}
-.clico{width:36px;height:36px;flex-shrink:0;background:rgba(0,240,208,.07);border:1px solid rgba(0,240,208,.15);border-radius:6px;display:flex;align-items:center;justify-content:center;color:var(--c1);font-size:14px}
-.cllbl{font-size:.6rem;letter-spacing:.1em;text-transform:uppercase;color:var(--txt);display:block;margin-bottom:.1rem}
-.clval{font-size:.78rem;color:var(--head)}
-/* ROADMAP */
-.rdm{display:flex;flex-direction:column}
-.rdm-phase{display:grid;grid-template-columns:40px 1fr;gap:0 1.4rem;padding-bottom:2.8rem}
-.rdm-left{display:flex;flex-direction:column;align-items:center;padding-top:4px}
-.rdm-dot{width:16px;height:16px;border-radius:50%;flex-shrink:0;position:relative;z-index:1}
-.rdm-line{width:2px;flex:1;background:linear-gradient(to bottom,rgba(0,240,208,.3),var(--brd));margin-top:6px;min-height:40px}
-.rdm-content{background:var(--surf);border:1px solid var(--brd);border-radius:10px;padding:1.5rem 1.6rem;transition:border-color .3s}
-.rdm-meta{display:flex;align-items:center;gap:.8rem;margin-bottom:.6rem;flex-wrap:wrap}
-.rdm-period{font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--txt)}
-.rdm-badge{font-size:.62rem;letter-spacing:.08em;padding:.15rem .55rem;border-radius:3px;border:1px solid}
-.rdm-title{font-family:var(--sans);font-size:1.15rem;font-weight:800;color:var(--head);letter-spacing:-.01em;margin-bottom:.55rem}
-.rdm-desc{font-size:.81rem;color:var(--txt);line-height:1.8;margin-bottom:.9rem}
-.rdm-skills{display:flex;flex-wrap:wrap;gap:.4rem}
-.rsk{font-size:.62rem;letter-spacing:.06em;padding:.18rem .52rem;border-radius:3px;border:1px solid}
-@keyframes ripple{0%{transform:scale(1);opacity:.5}100%{transform:scale(2.2);opacity:0}}
-@media(max-width:768px){.rdm-phase{grid-template-columns:28px 1fr;gap:0 .9rem}}
 </style>
 </head>
 <body>
@@ -228,7 +205,6 @@ body::after{content:'';position:fixed;inset:0;pointer-events:none;z-index:9998;o
     <li><a href="javascript:void(0)" onclick="scrollToId('exp-s')">XP</a></li>
     <li><a href="javascript:void(0)" onclick="scrollToId('edu-s')">Edu</a></li>
     <li><a href="javascript:void(0)" onclick="scrollToId('contact-s')">Contact</a></li>
-    <li><a href="javascript:void(0)" onclick="scrollToId('roadmap')">Roadmap</a></li>
   </ul>
   <div id="navBack" style="display:none"><a class="nback" href="javascript:void(0)" onclick="goPage('home')"><i class="fa fa-arrow-left"></i> Back</a></div>
   <a href="https://github.com/Mouse2204" target="_blank" class="nbtn"><i class="fab fa-github" style="margin-right:.35rem"></i>GitHub</a>
@@ -323,81 +299,27 @@ body::after{content:'';position:fixed;inset:0;pointer-events:none;z-index:9998;o
     </div>
   </div>
 </div></section>
-<section id="contact-s" style="padding:6rem 0;background:var(--bg)"><div class="wrap">
-  <div class="stag rv">06 — Contact</div><h2 class="stitle rv">Get In Touch</h2>
-  <div class="rv" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:1rem">
-    <a href="mailto:letb2204@gmail.com" class="clink"><div class="clico"><i class="fa fa-envelope"></i></div><div><span class="cllbl">Email</span><div class="clval">letb2204@gmail.com</div></div></a>
-    <a href="https://github.com/Mouse2204" target="_blank" class="clink"><div class="clico"><i class="fab fa-github"></i></div><div><span class="cllbl">GitHub</span><div class="clval">github.com/Mouse2204</div></div></a>
-    <a href="https://www.linkedin.com/in/thanhbinhdata" target="_blank" class="clink"><div class="clico"><i class="fab fa-linkedin-in"></i></div><div><span class="cllbl">LinkedIn</span><div class="clval">in/thanhbinhdata</div></div></a>
-    <div class="clink" style="cursor:default"><div class="clico"><i class="fa fa-phone"></i></div><div><span class="cllbl">Phone</span><div class="clval">0768 778 942</div></div></div>
-    <div class="clink" style="cursor:default"><div class="clico"><i class="fa fa-map-marker-alt"></i></div><div><span class="cllbl">Location</span><div class="clval">Ho Chi Minh City, VN</div></div></div>
-  </div>
-</div></section>
-
-<section id="roadmap" style="padding:6rem 0;background:var(--bg2)"><div class="wrap">
-  <div class="stag rv">07 — Career Roadmap</div>
-  <h2 class="stitle rv">Data Engineer<br>Growth Path</h2>
-  <p class="ssub rv" style="margin-bottom:3.5rem">From fundamentals to senior-level infrastructure — tracking where I am now and where I am heading.</p>
-  <div class="rdm rv">
-
-    <div class="rdm-phase">
-      <div class="rdm-left"><div class="rdm-dot" style="background:var(--c1);box-shadow:0 0 0 4px rgba(0,240,208,.15)"></div><div class="rdm-line"></div></div>
-      <div class="rdm-content">
-        <div class="rdm-meta"><span class="rdm-period">2023 — 2024</span><span class="rdm-badge" style="color:var(--c1);border-color:rgba(0,240,208,.3);background:rgba(0,240,208,.08)">✓ Completed</span></div>
-        <div class="rdm-title">Foundation Layer</div>
-        <p class="rdm-desc">Core CS fundamentals and first engineering projects. Built algorithmic thinking through Gomoku AI (minimax + alpha-beta), Bellman-Ford TSP, and Tower of Hanoi. First exposure to SQL, data structures, and MIPS-level CNN inference at HCMUT.</p>
-        <div class="rdm-skills"><span class="rsk" style="color:var(--c1);border-color:rgba(0,240,208,.25);background:rgba(0,240,208,.06)">Python</span><span class="rsk" style="color:var(--c1);border-color:rgba(0,240,208,.25);background:rgba(0,240,208,.06)">C++</span><span class="rsk" style="color:var(--c1);border-color:rgba(0,240,208,.25);background:rgba(0,240,208,.06)">SQL</span><span class="rsk" style="color:var(--c1);border-color:rgba(0,240,208,.25);background:rgba(0,240,208,.06)">Algorithms</span><span class="rsk" style="color:var(--c1);border-color:rgba(0,240,208,.25);background:rgba(0,240,208,.06)">Data Structures</span><span class="rsk" style="color:var(--c1);border-color:rgba(0,240,208,.25);background:rgba(0,240,208,.06)">MIPS Assembly</span></div>
-      </div>
+<section id="contact-s"><div class="wrap">
+  <div class="stag rv">06 — Contact</div><h2 class="stitle rv">Let's Build Something</h2>
+  <div class="ctg rv">
+    <div class="cti">
+      <p>Looking for <b style="color:var(--c1)">Intern Data Engineer</b> opportunities. If you're building data infrastructure, IoT platforms, or ML pipelines — I'd love to connect.</p>
+      <ul class="ctl">
+        <li><div class="ctlico"><i class="fa fa-envelope"></i></div><div><span class="ctllbl">Email</span><div class="ctlval"><a href="/cdn-cgi/l/email-protection#abc7cedfc999999b9febccc6cac2c785c8c4c6"><span class="__cf_email__" data-cfemail="244841504616161410644349454d480a474b49">[email&#160;protected]</span></a></div></div></li>
+        <li><div class="ctlico"><i class="fab fa-github"></i></div><div><span class="ctllbl">GitHub</span><div class="ctlval"><a href="https://github.com/Mouse2204" target="_blank">github.com/Mouse2204</a></div></div></li>
+        <li><div class="ctlico"><i class="fab fa-linkedin-in"></i></div><div><span class="ctllbl">LinkedIn</span><div class="ctlval"><a href="https://www.linkedin.com/in/thanhbinhdata" target="_blank">in/thanhbinhdata</a></div></div></li>
+        <li><div class="ctlico"><i class="fa fa-phone"></i></div><div><span class="ctllbl">Phone</span><div class="ctlval">0768 778 942</div></div></li>
+        <li><div class="ctlico"><i class="fa fa-map-marker-alt"></i></div><div><span class="ctllbl">Location</span><div class="ctlval">Ho Chi Minh City, Việt Nam</div></div></li>
+      </ul>
     </div>
-
-    <div class="rdm-phase">
-      <div class="rdm-left"><div class="rdm-dot" style="background:var(--c1);box-shadow:0 0 0 4px rgba(0,240,208,.15)"></div><div class="rdm-line"></div></div>
-      <div class="rdm-content">
-        <div class="rdm-meta"><span class="rdm-period">2024 — 2025</span><span class="rdm-badge" style="color:var(--c1);border-color:rgba(0,240,208,.3);background:rgba(0,240,208,.08)">✓ Completed</span></div>
-        <div class="rdm-title">ML &amp; AI Engineering</div>
-        <p class="rdm-desc">Deep learning research and production ML systems. Built DeepFake Detection (MTCNN + CNN + LSTM, 90–92% precision on 10,000+ videos) and Hybrid Recommender System with Real-Time Bidding auction layer. Started Lab research on micro-Doppler radar signal processing.</p>
-        <div class="rdm-skills"><span class="rsk" style="color:var(--c1);border-color:rgba(0,240,208,.25);background:rgba(0,240,208,.06)">PyTorch</span><span class="rsk" style="color:var(--c1);border-color:rgba(0,240,208,.25);background:rgba(0,240,208,.06)">CNN / LSTM</span><span class="rsk" style="color:var(--c1);border-color:rgba(0,240,208,.25);background:rgba(0,240,208,.06)">MTCNN</span><span class="rsk" style="color:var(--c1);border-color:rgba(0,240,208,.25);background:rgba(0,240,208,.06)">PySpark</span><span class="rsk" style="color:var(--c1);border-color:rgba(0,240,208,.25);background:rgba(0,240,208,.06)">ALS</span><span class="rsk" style="color:var(--c1);border-color:rgba(0,240,208,.25);background:rgba(0,240,208,.06)">Sklearn</span></div>
-      </div>
-    </div>
-
-    <div class="rdm-phase" style="position:relative">
-      <div class="rdm-left"><div class="rdm-dot" style="background:var(--bg2);border:2px solid var(--c1);position:relative"><span style="position:absolute;inset:-6px;border-radius:50%;border:2px solid var(--c1);opacity:.4;animation:ripple 1.6s ease-out infinite"></span><span style="position:absolute;inset:-12px;border-radius:50%;border:2px solid var(--c1);opacity:.2;animation:ripple 1.6s ease-out .4s infinite"></span></div><div class="rdm-line"></div></div>
-      <div class="rdm-content" style="border-color:rgba(0,240,208,.25);background:rgba(0,240,208,.03)">
-        <div class="rdm-meta"><span class="rdm-period">2025 — 2026</span><span class="rdm-badge" style="color:#ff8c42;border-color:rgba(255,140,66,.35);background:rgba(255,140,66,.1)">⚡ Current</span></div>
-        <div class="rdm-title" style="color:var(--c1)">Data Engineering Core</div>
-        <p class="rdm-desc">Building production-grade data infrastructure. VNTT internship shipped MIND metadata-driven ingestion (−40% config time). IoT Streaming Platform on Kubernetes with Kafka + Spark + Flink + Delta Lake. Spatial data pipelines at PostGIS + Sedona scale.</p>
-        <div style="margin:.9rem 0;display:flex;flex-direction:column;gap:.45rem">
-          <div style="display:flex;align-items:center;gap:.6rem;font-size:.78rem;color:var(--txt2)"><i class="fa fa-check-circle" style="color:var(--c1);font-size:.75rem"></i>Kafka KRaft streaming + IoT edge with EdgeX Foundry</div>
-          <div style="display:flex;align-items:center;gap:.6rem;font-size:.78rem;color:var(--txt2)"><i class="fa fa-check-circle" style="color:var(--c1);font-size:.75rem"></i>Lakehouse: MinIO + Delta Lake + Iceberg + Trino federation</div>
-          <div style="display:flex;align-items:center;gap:.6rem;font-size:.78rem;color:var(--txt2)"><i class="fa fa-check-circle" style="color:var(--c1);font-size:.75rem"></i>Airflow DAG auto-generation from metadata config</div>
-          <div style="display:flex;align-items:center;gap:.6rem;font-size:.78rem;color:var(--txt2)"><i class="fa fa-check-circle" style="color:var(--c1);font-size:.75rem"></i>Spatial pipelines: PostGIS + Apache Sedona</div>
-          <div style="display:flex;align-items:center;gap:.6rem;font-size:.78rem;color:var(--txt)"><i class="fa fa-circle-notch fa-spin" style="color:#ff8c42;font-size:.75rem"></i>K8s production cluster for full data platform</div>
-          <div style="display:flex;align-items:center;gap:.6rem;font-size:.78rem;color:var(--txt)"><i class="fa fa-circle-notch fa-spin" style="color:#ff8c42;font-size:.75rem"></i>Data Quality contracts with Great Expectations at scale</div>
-        </div>
-        <div class="rdm-skills"><span class="rsk" style="color:var(--c1);border-color:rgba(0,240,208,.3);background:rgba(0,240,208,.08)">Kafka</span><span class="rsk" style="color:var(--c1);border-color:rgba(0,240,208,.3);background:rgba(0,240,208,.08)">PySpark</span><span class="rsk" style="color:var(--c1);border-color:rgba(0,240,208,.3);background:rgba(0,240,208,.08)">Flink</span><span class="rsk" style="color:var(--c1);border-color:rgba(0,240,208,.3);background:rgba(0,240,208,.08)">Airflow</span><span class="rsk" style="color:var(--c1);border-color:rgba(0,240,208,.3);background:rgba(0,240,208,.08)">MinIO</span><span class="rsk" style="color:var(--c1);border-color:rgba(0,240,208,.3);background:rgba(0,240,208,.08)">Delta Lake</span><span class="rsk" style="color:var(--c1);border-color:rgba(0,240,208,.3);background:rgba(0,240,208,.08)">Kubernetes</span><span class="rsk" style="color:var(--c1);border-color:rgba(0,240,208,.3);background:rgba(0,240,208,.08)">EdgeX</span></div>
-      </div>
-    </div>
-
-    <div class="rdm-phase">
-      <div class="rdm-left"><div class="rdm-dot" style="background:var(--surf);border:2px solid var(--brd)"></div><div class="rdm-line" style="background:var(--brd)"></div></div>
-      <div class="rdm-content" style="opacity:.65">
-        <div class="rdm-meta"><span class="rdm-period">2026 — 2027</span><span class="rdm-badge" style="color:var(--txt);border-color:var(--brd)">→ Next</span></div>
-        <div class="rdm-title">Senior Data Engineer</div>
-        <p class="rdm-desc">Graduate from HCMUT (2027). Land a full-time Data Engineer role. Master advanced streaming patterns — Flink stateful processing, CDC with Debezium, real-time ML feature stores, and cost-optimised cloud-native architecture.</p>
-        <div class="rdm-skills"><span class="rsk" style="color:var(--txt);border-color:var(--brd)">CDC / Debezium</span><span class="rsk" style="color:var(--txt);border-color:var(--brd)">Feature Store</span><span class="rsk" style="color:var(--txt);border-color:var(--brd)">dbt</span><span class="rsk" style="color:var(--txt);border-color:var(--brd)">Flink SQL</span><span class="rsk" style="color:var(--txt);border-color:var(--brd)">OpenTelemetry</span><span class="rsk" style="color:var(--txt);border-color:var(--brd)">Ray</span></div>
-      </div>
-    </div>
-
-    <div class="rdm-phase" style="padding-bottom:0">
-      <div class="rdm-left"><div class="rdm-dot" style="background:var(--surf);border:2px solid var(--brd)"></div></div>
-      <div class="rdm-content" style="opacity:.45">
-        <div class="rdm-meta"><span class="rdm-period">2027+</span><span class="rdm-badge" style="color:var(--txt);border-color:var(--brd)">→ Goal</span></div>
-        <div class="rdm-title">Data Platform Lead</div>
-        <p class="rdm-desc">Lead data infrastructure at scale — designing multi-tenant lakehouses, real-time ML pipelines, and cost-efficient cloud-native platforms. Mentor junior engineers and contribute to open-source data tooling.</p>
-        <div class="rdm-skills"><span class="rsk" style="color:var(--txt);border-color:var(--brd)">Platform Design</span><span class="rsk" style="color:var(--txt);border-color:var(--brd)">Team Lead</span><span class="rsk" style="color:var(--txt);border-color:var(--brd)">Cost Optimisation</span><span class="rsk" style="color:var(--txt);border-color:var(--brd)">Open Source</span><span class="rsk" style="color:var(--txt);border-color:var(--brd)">Architecture</span></div>
-      </div>
-    </div>
-
+    <form class="cform" onsubmit="submitForm(event)">
+      <div class="frow"><div class="ff"><label>Name</label><input type="text" name="name" placeholder="Your name" required/></div><div class="ff"><label>Email</label><input type="email" name="email" placeholder="you@example.com" required/></div></div>
+      <div class="ff"><label>Subject</label><input type="text" name="subject" placeholder="Internship / Collaboration..."/></div>
+      <div class="ff"><label>Message</label><textarea name="message" placeholder="Description"></textarea></div>
+      <button type="submit" class="btn btnp" style="align-self:flex-start"><i class="fa fa-paper-plane"></i> Send</button>
+      <div id="fok" style="display:none;font-size:.75rem;color:var(--c1);font-family:var(--mono);letter-spacing:.06em;margin-top:.4rem"></div>
+      <div id="ferr" style="display:none;font-size:.75rem;color:var(--c3);font-family:var(--mono);letter-spacing:.06em;margin-top:.4rem">✕ Something went wrong — try emailing directly: letb2204@gmail.com</div>
+    </form>
   </div>
 </div></section>
 <footer><div class="ftc">Lê Thanh Bình © 2026 · Built with precision</div><div class="fts"><a href="https://github.com/Mouse2204" target="_blank" class="fta"><i class="fab fa-github"></i></a><a href="https://www.linkedin.com/in/thanhbinhdata" target="_blank" class="fta"><i class="fab fa-linkedin-in"></i></a><a href="/cdn-cgi/l/email-protection#94f8f1e0f6a6a6a4a0d4f3f9f5fdf8baf7fbf9" class="fta"><i class="fa fa-envelope"></i></a><a href="https://www.facebook.com/lethanh.binh.3576224" target="_blank" class="fta"><i class="fab fa-facebook-f"></i></a></div></footer>
@@ -443,7 +365,7 @@ body::after{content:'';position:fixed;inset:0;pointer-events:none;z-index:9998;o
 <footer><div class="ftc">Lê Thanh Bình © 2026 · <a href="javascript:void(0)" onclick="goPage('home')">Back to Portfolio</a></div><div class="fts"><a href="https://github.com/Mouse2204" target="_blank" class="fta"><i class="fab fa-github"></i></a><a href="https://www.linkedin.com/in/thanhbinhdata" target="_blank" class="fta"><i class="fab fa-linkedin-in"></i></a><a href="/cdn-cgi/l/email-protection#68040d1c0a5a5a585c280f05090104460b0705" class="fta"><i class="fa fa-envelope"></i></a></div></footer>
 </div>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 const PAGES=['home','stack','projects'];
 let cur='home',agcOk=false,tickOk=false,portalOk=false;
 function goPage(n){
